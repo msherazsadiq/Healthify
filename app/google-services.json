@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41732066909",
+    "project_id": "msherazsadiq-healthify",
+    "storage_bucket": "msherazsadiq-healthify.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41732066909:android:6823c8e1df4f6f6227c7b4",
+        "android_client_info": {
+          "package_name": "com.sherazsadiq.healthify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi-0KzenLioIrrups_WU5xxFLbd10-G5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

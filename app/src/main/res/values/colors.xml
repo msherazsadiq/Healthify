@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="half_white">#F5F5F5</color>
+
+    <color name="water_chart">#2196F3</color>
+    <color name="step_chart">#4CAF50</color>
+
+    <!-- Light Theme Colors -->
+    <color name="light_primary">#163172</color>                 <!-- Toolbar, FAB -->
+    <color name="light_on_primary">#FFFFFF</color>              <!-- Text/icons on primary -->
+
+    <color name="light_primary_container">#FFFFFF</color>       <!-- Card background -->
+    <color name="light_on_primary_container">#000000</color>    <!-- Card text -->
+
+    <color name="light_secondary">#FFFFFF</color>               <!-- Light secondary tone -->
+    <color name="light_on_secondary">#000000</color>
+
+    <color name="light_secondary_container">#FFFFFF</color>
+    <color name="light_on_secondary_container">#000000</color>
+
+    <color name="light_background">#FFFFFF</color>              <!-- App background -->
+    <color name="light_surface">#FFFFFF</color>                 <!-- CardView bg -->
+    <color name="light_on_surface">#000000</color>              <!-- Default text color -->
+
+    <color name="light_error">#FEFEF1</color>
+    <color name="light_on_error">#B00020</color>
+
+
+
+    <!-- Dark Theme Colors -->
+    <color name="dark_primary">#D6E4F0</color>                  <!-- Toolbar, FAB -->
+    <color name="dark_on_primary">#163172</color>               <!-- Text/icons on primary -->
+
+    <color name="dark_primary_container">#163172</color>        <!-- Card background -->
+    <color name="dark_on_primary_container">#FFFFFF</color>     <!-- Card text -->
+
+    <color name="dark_secondary">#163172</color>                <!-- Slightly lighter green -->
+    <color name="dark_on_secondary">#FFFFFF</color>
+
+    <color name="dark_secondary_container">#163172</color>
+    <color name="dark_on_secondary_container">#FFFFFF</color>
+
+    <color name="dark_background">#000000</color>               <!-- Main background -->
+    <color name="dark_surface">#121212</color>                  <!-- CardView bg -->
+    <color name="dark_on_surface">#FFFFFF</color>               <!-- Default text color -->
+
+    <color name="dark_error">#121212</color>
+    <color name="dark_on_error">#B00020</color>
+</resources>
