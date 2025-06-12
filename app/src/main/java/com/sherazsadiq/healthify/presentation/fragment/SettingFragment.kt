@@ -178,15 +178,14 @@ class SettingFragment : Fragment() {
         val delayMillis = target.timeInMillis - now.timeInMillis
         val delayMinutes = TimeUnit.MILLISECONDS.toMinutes(delayMillis)
 
+
         val request = OneTimeWorkRequestBuilder<ReminderWorker>()
             .setInitialDelay(delayMinutes, TimeUnit.MINUTES)
             .build()
 
-        WorkManager.getInstance(requireContext()).enqueueUniqueWork(
-            "daily_reminder",
-            ExistingWorkPolicy.REPLACE,
-            request
-        )
+
+        WorkManager.getInstance(requireContext()).enqueue(request)
+
     }
 
     private fun setupGoalButtons() {

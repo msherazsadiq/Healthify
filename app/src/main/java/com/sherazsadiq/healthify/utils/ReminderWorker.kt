@@ -20,7 +20,6 @@ class ReminderWorker(
 
     private fun showReminderNotification() {
         val notificationManager = applicationContext.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-
         val channelId = "reminder_channel"
         val channelName = "Health Reminder"
 
@@ -29,17 +28,21 @@ class ReminderWorker(
                 channelId,
                 channelName,
                 NotificationManager.IMPORTANCE_HIGH
-            )
+            ).apply {
+                description = "Reminder to log your health data"
+            }
             notificationManager.createNotificationChannel(channel)
         }
 
         val notification = NotificationCompat.Builder(applicationContext, channelId)
             .setContentTitle("Health Reminder")
             .setContentText("It's time to log your health data!")
-            .setSmallIcon(R.drawable.logo) // Replace with your app's icon
+            .setSmallIcon(R.drawable.logo) // make sure this is a valid PNG
             .setAutoCancel(true)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
             .build()
 
         notificationManager.notify(1, notification)
     }
+
 }

@@ -70,6 +70,8 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+
+
     private fun requestNotificationPermission() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
@@ -77,6 +79,9 @@ class HomeActivity : AppCompatActivity() {
             }
         }
     }
+
+
+
 
 
 

@@ -16,6 +16,8 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.LineChart
@@ -38,11 +40,9 @@ import com.github.mikephil.charting.listener.OnChartValueSelectedListener
 import com.sherazsadiq.healthify.presentation.viewmodel.AuthViewModel
 import com.sherazsadiq.healthify.presentation.viewmodel.DashboardViewModel
 import com.sherazsadiq.healthify.presentation.viewmodel.WeightMarkerView
+import com.sherazsadiq.healthify.utils.ReminderWorker
 import kotlinx.coroutines.launch
-
-
-
-
+import java.util.concurrent.TimeUnit
 
 
 class DashboardFragment : Fragment() {
@@ -51,11 +51,9 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
+
         // Initialize view binding (assuming it's set up)
         binding = FragmentDashboardBinding.bind(view)
-
-
-
 
         // Fetch data
         dashboardViewModel.fetchTodayDailyEntry()
